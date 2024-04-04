@@ -40,7 +40,7 @@ void LinearSearch()
 
         ctr = 0;
         i = 0; // step 2
-    } while (i < n) // step 3
+        while (i < n) // step 3
     {
             ctr++;
             if (arr[i] == item)
@@ -52,9 +52,24 @@ void LinearSearch()
     }
     
     if (i==n) // step 5
-    {
-        /* code */
-    }
+        cout << "\n" << item << " not found in the array\n";
+
+        cout << "\nContinue search (y/n): ";
+        cin >> ch;
+
+    }while ((ch == 'y') || (ch == 'Y'));
+   }
+
+   void display()
+   {
+        cout <<"Array elments are: ";
+        for ( i = 0; i < n; i++)
+            cout << arr[i] << " ";
+        cout << endl;
+   }
+    
+        
+    
     
 }
 
